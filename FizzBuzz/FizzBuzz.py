@@ -1,11 +1,11 @@
-def isDivisible():
-    print("Enter a number:", end=" ")
-    n = int(input())
+
+
+def isDivisible(n):
     if n % 3 == 0:
-        print('Fizz')
+        return('Fizz')
     elif n % 5 == 0: 
-        print('Buzz')
-    else: 
-        n % 3 == 0 and n % 5 == 0
-        print('FizzBuzz')
-isDivisible()
+        return('Buzz')
+    elif n % 3 == 0 and n % 5 == 0:
+        return('FizzBuzz')
+    else:
+        return(n)
